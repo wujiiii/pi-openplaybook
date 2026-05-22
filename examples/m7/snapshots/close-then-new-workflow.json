@@ -1,0 +1,9 @@
+{
+  "generatedAt": "2026-05-18T07:26:49.909Z",
+  "name": "close-then-new-workflow",
+  "result": "ok",
+  "events": [
+    "workflow_closed",
+    "workflow_started"
+  ]
+}

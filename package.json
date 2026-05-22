@@ -1,0 +1,64 @@
+{
+	"name": "pi-openplaybook",
+	"version": "0.1.0",
+	"description": "Workflow orchestration extension for pi using file-based playbooks",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/wujiiii/pi-openplaybook.git"
+	},
+	"keywords": [
+		"pi-package",
+		"pi-extension",
+		"openplaybook",
+		"workflow"
+	],
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist",
+		"docs/images",
+		"README.md",
+		"INSTALL.md",
+		"ARCHITECTURE.md",
+		"examples"
+	],
+	"pi": {
+		"extensions": [
+			"./src/openplaybook/index.ts"
+		]
+	},
+	"scripts": {
+		"clean": "shx rm -rf dist",
+		"build": "tsgo -p tsconfig.build.json && npm run build:webui",
+		"build:webui": "vue-tsc -p webui/tsconfig.json --noEmit && vite build --config webui/vite.config.ts",
+		"dev": "tsgo -p tsconfig.build.json --watch --preserveWatchOutput",
+		"test": "vitest --run",
+		"prepublishOnly": "npm run clean && npm run build"
+	},
+	"dependencies": {
+		"@earendil-works/pi-coding-agent": "^0.75.4",
+		"@element-plus/icons-vue": "^2.3.2",
+		"element-plus": "^2.14.0"
+	},
+	"devDependencies": {
+		"@typescript/native-preview": "7.0.0-dev.20260521.1",
+		"@types/node": "^24.12.4",
+		"@vitejs/plugin-vue": "^6.0.7",
+		"shx": "^0.4.0",
+		"typescript": "^5.9.3",
+		"vite": "^8.0.14",
+		"vitest": "^3.2.4",
+		"vue": "^3.5.34",
+		"vue-tsc": "^3.3.1"
+	},
+	"engines": {
+		"node": ">=22.19.0"
+	}
+}

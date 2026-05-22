@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.claude/
+.pi/
+coverage/
+*.log
+*.tgz
+*.tsbuildinfo

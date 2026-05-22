@@ -1,0 +1,7 @@
+{
+  "generatedAt": "2026-05-18T07:26:49.908Z",
+  "name": "qa-rejected",
+  "result": "blocked",
+  "phase": "subtask_qa",
+  "reason": "qa_gate"
+}

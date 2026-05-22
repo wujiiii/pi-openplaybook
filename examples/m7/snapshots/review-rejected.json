@@ -1,0 +1,7 @@
+{
+  "generatedAt": "2026-05-18T07:26:49.907Z",
+  "name": "review-rejected",
+  "result": "blocked",
+  "phase": "architecture_review",
+  "reason": "review_gate"
+}

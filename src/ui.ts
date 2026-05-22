@@ -1,0 +1,25 @@
+export function renderMissingWebUiPage(): string {
+	return [
+		"<!doctype html>",
+		'<html lang="zh-CN">',
+		"<head>",
+		'<meta charset="utf-8" />',
+		'<meta name="viewport" content="width=device-width, initial-scale=1" />',
+		"<title>OpenPlaybook WebUI 未构建</title>",
+		"<style>",
+		"body{margin:0;font-family:Inter,Arial,sans-serif;background:#f6f7fb;color:#172033;display:grid;place-items:center;min-height:100vh}",
+		"main{max-width:720px;background:#fff;border:1px solid #dde3ee;border-radius:8px;padding:32px;box-shadow:0 18px 50px rgba(15,23,42,.08)}",
+		"h1{margin:0 0 12px;font-size:24px}",
+		"p{line-height:1.7;color:#526070}",
+		"code{background:#eef2f7;border-radius:4px;padding:2px 6px;color:#111827}",
+		"</style>",
+		"</head>",
+		"<body>",
+		"<main>",
+		"<h1>OpenPlaybook WebUI 尚未构建</h1>",
+		"<p>当前服务未找到 Vue WebUI 构建产物。请在仓库根目录运行 <code>npm --prefix packages/openplaybook run build</code> 后重新执行 <code>/opb serve</code>。</p>",
+		"</main>",
+		"</body>",
+		"</html>",
+	].join("");
+}

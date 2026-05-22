@@ -1,0 +1,30 @@
+{
+  "id": "minimal-real-runtime-dogfood",
+  "runtimePresetId": "real-dogfood",
+  "capabilityPresetId": "default-web-app",
+  "workflow": "dogfood-minimal-feature",
+  "request": "Add a small settings page with one persisted user preference and verify it through review and QA.",
+  "expectedPhases": [
+    "requirements_discussion",
+    "requirements_approval",
+    "architecture_design",
+    "architecture_review",
+    "architecture_approval",
+    "planning",
+    "planning_review",
+    "planning_approval",
+    "development",
+    "subtask_review",
+    "subtask_qa",
+    "milestone_approval",
+    "done"
+  ],
+  "expectedArtifacts": [
+    "requirements summary",
+    "architecture notes",
+    "implementation plan",
+    "code changes",
+    "review decision",
+    "qa decision"
+  ]
+}

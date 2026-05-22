@@ -1,0 +1,9 @@
+{
+  "generatedAt": "2026-05-18T07:26:49.909Z",
+  "name": "rollback-preview",
+  "result": "preview",
+  "actions": [
+    "git reset --hard <commit>",
+    "restore state snapshot"
+  ]
+}
